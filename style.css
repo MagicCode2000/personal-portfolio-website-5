@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --blue-color: #4e69ff;
+}
+.img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 650px;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    padding: 0px 80px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    z-index: 99;
+    color: black;
+    font-size: 22px;
+}
+header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-weight: 600;
+    position: relative;
+}
+header nav a::before{
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    bottom: -5px;
+    scale: 0 1;
+    transition: scale .3s ease;
+}
+header nav .active::before,
+header nav a:hover::before{
+    scale: .7 1;
+}
+.content-box{
+    width: 50%;
+    color: black;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+.text-box .skill{
+    color: var(--blue-color);
+}
+.text-box h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+.text-box p{
+    margin: 25px 0px;
+}
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    height: 200px;
+}
+.icon-box i{
+    color: var(--blue-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+.text-box .Btn{
+    color: white;
+    width: 170px;
+    height: 42px;
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: box-shadow .2s;
+}
+.text-box .Btn:hover{
+    box-shadow: 0px 0px 15px var(--blue-color);
+}

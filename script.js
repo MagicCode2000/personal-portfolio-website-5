@@ -1,0 +1,10 @@
+const timeline = gsap.timeline({defaults : {duration : .25, opacity : 0}})
+  timeline
+  .from("header h1", {y : "-70px"})
+  .from("header a",{y : "-70px", stagger : .15})
+  .from(".text-box h1:nth-child(1)",{x : "100px"})
+  .from(".text-box h1:nth-child(2)",{x : "-100px"})
+  .from(".text-box p",{y : "100px"})
+  .from(".Btn",{y : "-100px"})
+  .from(".icon-box i",{y : "-100px",stagger : .15})
+  .from(".img",{scale : "0"})
